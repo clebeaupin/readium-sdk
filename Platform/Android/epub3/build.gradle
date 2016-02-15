@@ -17,7 +17,9 @@ model {
                     ]
                 }
                 exportedHeaders {
-                    srcDir "./src/main/jni"
+                    srcDirs = [
+                            "./src/main/jni"
+                            ]
                 }
             }
         }

@@ -157,7 +157,7 @@ subdirs := $(addprefix $(LOCAL_PATH)/, )
 
 LOCAL_MODULE := epub3
 LOCAL_CPPFLAGS := -std=gnu++11 -fpermissive -DBUILDING_EPUB3
-LOCAL_CFLAGS := -std=gnu11 -DBUILDING_EPUB3
+LOCAL_CFLAGS := -DBUILDING_EPUB3
 
 ifeq ($(TARGET_ARCH_ABI),x86)
     LOCAL_CFLAGS += -mtune=atom -mssse3 -mfpmath=sse
