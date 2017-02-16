@@ -6,6 +6,10 @@ if (rootProject.hasProperty("readium_ndk_debug") && rootProject.readium_ndk_debu
     apply from: 'build_stable.gradle'
 }
 
+dependencies {
+    compile fileTree(dir: '../libs', include: '*.jar')
+}
+
 tasks.whenTaskAdded { task ->
     def taskName = task.name
 
